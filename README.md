@@ -34,6 +34,7 @@ cp ~/.config/omarchy/themes/forest-green/waybar/style.css ~/.config/waybar/
 pkill waybar
 waybar -c ~/.config/waybar/config.jsonc \
        -s ~/.config/waybar/style.css &
+exit
 ```
 
 ---
