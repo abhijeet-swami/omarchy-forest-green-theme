@@ -103,14 +103,14 @@ window#waybar.empty #window {
 }
 
 #tray {
-    padding-left: 8px;
+    padding-left: 10px;
 }
 
 #custom-omarchy {
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     margin-right: 10px;
-    padding-right: 14px;
+    padding-right: 10px;
 }
 
 #clock {
