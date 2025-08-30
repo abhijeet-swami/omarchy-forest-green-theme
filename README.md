@@ -29,6 +29,7 @@ mkdir -p ~/Documents/default-waybar
 mkdir -p ~/.config/waybar
 cp ~/.config/omarchy/themes/forest-green/waybar/config.jsonc ~/.config/waybar/
 cp ~/.config/omarchy/themes/forest-green/waybar/style.css ~/.config/waybar/
+
 # Restart Waybar
 pkill waybar
 waybar -c ~/.config/waybar/config.jsonc \
