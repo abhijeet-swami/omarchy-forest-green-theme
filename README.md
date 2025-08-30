@@ -16,14 +16,19 @@ A sleek, modern theme with a refreshing green palette and subtle glassmorphism f
 omarchy-theme-install https://github.com/abhijeet-swami/omarchy-forest-green-theme
 ```
 
-After installing, you can try the **Forest Green Waybar** with:
+## Forest Green Waybar Installation
+
+To install the **Forest Green Waybar**, run the following commands in your terminal:
 
 ```bash
-pkill waybar
-waybar -c ~/.config/omarchy/themes/forest-green/waybar/config.jsonc \
-       -s ~/.config/omarchy/themes/forest-green/waybar/style.css &
-exit
-```
+# Backup existing Waybar config
+mkdir -p ~/Documents/default-waybar
+[ -d ~/.config/waybar ] && mv ~/.config/waybar ~/Documents/default-waybar
+
+# Copy Forest Green Waybar files
+mkdir -p ~/.config/waybar
+cp ~/.config/omarchy/themes/forest-green/waybar/config.jsonc ~/.config/waybar/
+cp ~/.config/omarchy/themes/forest-green/waybar/style.css ~/.config/waybar/
 
 ---
 
