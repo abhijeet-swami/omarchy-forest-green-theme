@@ -13,7 +13,7 @@ window {
 }
 
 window .box-wrapper {
-  background: alpha(@background, 0.95);
+  background: alpha(@background, 0.8);
   color: @text;
   border: 2px solid @border;
   border-radius: 16px;
