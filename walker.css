@@ -9,16 +9,16 @@
 
 window {
   background: transparent;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 window .box-wrapper {
-  background: alpha(@background, 0.8);
+  background: alpha(@background, 0.85);
   color: @text;
   border: 2px solid @border;
   border-radius: 16px;
   padding: 8px;
-  margin: 0; 
+  margin: 0;
 }
 
 window .search-container,
@@ -28,31 +28,17 @@ window .search {
   border: 1px solid alpha(@border, 0.5);
   border-radius: 12px;
   padding: 8px 12px;
-  margin: 4px 0;
+  margin-top: 1px;
   font-size: 14px;
   font-weight: 500;
-}
-
-window .search:focus {
-  border-color: @border;
-  outline: none;
-}
-
-window .bar,
-window .scroll,
-window .list {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0;
 }
 
 window child {
   background: transparent;
   color: @text;
   border: none;
-  border-radius: 16px; 
-  padding: 4px 10px; 
+  border-radius: 16px;
+  padding: 4px 2px;
   transition: all 0.2s ease;
 }
 
@@ -63,39 +49,4 @@ window child:checked {
   color: @selected-text;
   font-weight: 600;
   transform: translateX(2px);
-}
-
-window child:active {
-  background: @border;
-  color: @background;
-  transform: scale(0.98);
-}
-
-window .item-box .title {
-  color: @foreground;
-  font-weight: 500;
-  font-size: 13px;
-}
-
-window child:selected .title,
-window child:focus .title,
-window child:checked .title {
-  color: @selected-text;
-  font-weight: 600;
-}
-
-window .item-box .subtitle {
-  color: alpha(@text, 0.7);
-  font-size: 11px;
-}
-
-window child:selected .subtitle,
-window child:focus .subtitle,
-window child:checked .subtitle {
-  color: alpha(@selected-text, 0.8);
-}
-
-window .item-box .icon {
-  margin-right: 12px;
-  -gtk-icon-size: 20px;
 }
